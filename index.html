@@ -9,6 +9,11 @@
       href="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/9/20/f9313b95-d0bb-4eed-be51-867109ccae59_3ae76005-fe8f-4dcd-9852-cf7d13c4bf52.jpg"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -16,12 +21,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="menu">
+    <header id="menu">
       <div class="logo">
-        <img src="./Assets/burger-removebg-preview.png" alt="" />
+        <img src="./Assets/burger-removebg-preview.png" alt="burger logo" />
         <div>
           <h2>Knock Down Burger</h2>
           <p>24 HOURS. NON-STOP YOU.</p>
@@ -53,19 +61,19 @@
         <h2 id="head2"><span> 24HRS</span></h2>
         <br>
         
-        <p>Packed with the perfect blend of nutrients and energy boosters to keep <br> you active, and unstoppable-anytime,anywhere</p>
+        <p>Packed with the perfect blend of nutrients and energy boosters to <br> keep you active, and unstoppable-anytime,anywhere</p>
         <br>
-         <button id="try"><i class="fa-solid fa-bolt"></i>TRY NOW</button>  
+         <a href=""><button id="try"><i class="fa-solid fa-bolt"></i>TRY NOW</button>  </a>
          <button id="try1"><i class="fa-solid fa-arrow-down"></i>Know More</button>  
       
       </div>
-        <div id="burgerimage">
+        <div data-aos="fade-left" id="burgerimage">
     
   
-            <img id="thunder1" src="./Assets/thunder-removebg-preview.png" alt="">   
-             <img id="thunder2" src="./Assets/thunder-removebg-preview.png" alt="">   
-              <img id="thunder3" src="./Assets/thunder-removebg-preview.png" alt="">   
-            <img id="burger" src="./Assets/burger_large-removebg-preview.png" alt="" /> 
+            <img id="thunder1" src="./Assets/thunder-removebg-preview.png" alt="effect">   
+             <img id="thunder2" src="./Assets/thunder-removebg-preview.png" alt="effect">   
+              <img id="thunder3" src="./Assets/thunder-removebg-preview.png" alt="effect">   
+            <img id="burger" src="./Assets/burger_large-removebg-preview.png" alt="burger image" /> 
         </div>    
 </div>
     </section>
@@ -73,7 +81,8 @@
     <h4>— MADE TO POWER YOU —</h4>
     <h2>WHY POWERBURGER IS DIFFERENT</h2>
 
-    <div class="features">
+    <div data-aos="fade-up"
+     data-aos-duration="3000" class="features">
         <div class="feature">
             <i class="fa-solid fa-bolt"></i>
             <h3>24-Hour Energy</h3>
@@ -97,40 +106,98 @@
       <br>
       <br>
       <section id="review">
-      <h4>— WHAT OUR CUSTOMER SAY —</h4>
+      <h4>— WHAT OUR CUSTOMERS SAY —</h4>
     <h2>REAL PEOPLE.REAL ENERGY</h2>
      <div class="cards">
 
-        <div class="reviewcard">
+        <div data-aos="zoom-in-down" class="reviewcard">
             <i class="fa-solid fa-quote-left"></i>
+            <br>
+            <img src="https://deepfakesweb.com/_next/image?url=%2Fcelebrities%2Fcristiano-ronaldo.webp&w=3840&q=75" alt="Ronaldo">
             <p>Power Burger literally keeps me going all day!.</p>
+            
             <h3>Cristiano Ronaldo</h3>
             <h5>Software Developer</h5>
         </div>
 
-        <div class="reviewcard">
+        <div data-aos="zoom-in-down" class="reviewcard">
             <i class="fa-solid fa-quote-left"></i>
+            <br>
+            <img src="https://image.tmdb.org/t/p/w500/t6niRFC3xCV6hJSuyC9ACWLSVXu.jpg" alt="shobana">
             <p>I have back to back classes and this burger gives me energy without making me feel heavy.</p>
             <h3>Shobana</h3>
             <h5>College Student</h5>
         </div>
 
-        <div class="reviewcard">
+        <div data-aos="zoom-in-down" class="reviewcard">
             <i class="fa-solid fa-quote-left"></i>
+            <br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRElfr8UeniHQol6LHMhFxNiR0O_qwHIT5PYgVf5JAayeC26-cwpLcmDa&s=10" alt="Gokul Bijuraj">
             <p>Best PreWorkout meal.Got an insane energy all day</p>
-            <h3>PUCK</h3>
+            <h3>Gokul Bijuraj</h3>
             <h5>Fitness Trainer</h5>
         </div>
 
     </div>
 
 </section>
+<br>
+<br>
 
-<footer>
-  <div id="bottomtab">
-   <img id="bottomlog" src="./Assets/burger-removebg-preview.png" alt="" />
-   </div>
-   
+<footer id="footer">
+  <div class="footersection">
+    <div class="footercontent1">
+      <a href="#menu"><img src="./Assets/burger-removebg-preview.png" alt=""></a>
+      <h3>Knock Down Burger</h3>
+      <p>24 hours of energy,<br>Anytime.Anywhere</p>
+      <br>
+      <div class="socials">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+       <a href=""> <i class="fa-brands fa-twitter"></i></a>
+       <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+
+      </div>
+    </div>
+    <div class="footercontent">
+      <a href=""><h3>Quick Links</h3></a>
+      <a href="">Home</a>
+      <a href="">Featurs</a>
+      <a href="">Our Story</a>
+      <a href="">Testimonials</a>
+      <a href="">FAQ</a>
+      <a href="">Contact</a>
+    </div>
+       <div class="footercontent">
+      <a href=""><h3>Support</h3></a>
+      <a href="">Help Center</a>
+      <a href="">Shipping & Delievery</a>
+      <a href="">Returns</a>
+      <a href="">Terms & Conditions</a>
+      <a href="">Privacy Policy</a>
+      
+    </div>
+       <div class="footercontent">
+      <a href=""><h3>News Letter</h3></a>
+      <p>Subscribe to get updates <br> and special offers.</p>
+      <textarea  name="" id="" placeholder="Enter Your Email" ></textarea> 
+       <i id="send" class="fa-solid fa-paper-plane"></i>
+       
+      </div>
+       
+  </div>
+  <br>
+
+  </div> 
+  
+  
+  
+  </div>
+  <hr>
+  <p id="copyright"> &copy; 2026 Knock Down Burger . All rights reserved to &reg; Sachu</p>
+   <br><br>
 </footer>
   </body>
+  <script>
+  AOS.init();
+</script>
 </html>

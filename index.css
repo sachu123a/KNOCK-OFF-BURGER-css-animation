@@ -14,7 +14,7 @@ body{
     font-family:Arial,sans-serif;
 }
 
-.menu{
+#menu{
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -115,33 +115,67 @@ font-size: 60px;
     color: #f7b500;
     
 }
+/* Burger container */
 #burgerimage{
-    width: 45%;
-    height: 75%;
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
-  
-}
-#burgerimage    img{
-    height: 100%;
     position: absolute;
-    bottom: 0px;
+    right: 130px;
+    bottom: 90px;
+    width: 500px;
+    height: 500px;
 }
-#burgerimages:hover #thunder1{
-    top: 50px;
-}
-#burgerimages:hover #thunder2{
-    left: 50px;
-}
-#burgerimages:hover #thunder3{
-    right: 50px;
-}
+
+/* Burger image */
 #burger{
-    width: 400px;
-    height: 70px;
-    top: -150px;
-    right: 50px;
+    position: absolute;
+    width: 350px;
+    left: 75px;
+    bottom: 0;
+    transition: transform .4s ease;
+}
+
+
+#thunder1,
+#thunder2,
+#thunder3{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    transition: all .5s ease;
+}
+
+
+#thunder1{
+    top: 40px;
+    left: 195px;
+}
+
+
+#thunder2{
+    top: 250px;
+    left: -70px;
+}
+
+
+#thunder3{
+    top: 250px;
+    right: -70px;
+}
+
+
+#burgerimage:hover #burger{
+    transform: scale(1.3);
+}
+
+#burgerimage:hover #thunder1{
+    transform: translateY(-40px) rotate(-20deg);
+}
+
+#burgerimage:hover #thunder2{
+    transform: translateX(-35px) rotate(-20deg);
+}
+
+#burgerimage:hover #thunder3{
+    transform: translateX(35px) rotate(20deg);
 }
 #section #subsection2{
     background-color: white;
@@ -161,7 +195,7 @@ color: #f7b500;
     background: white;
     padding: 0px 80px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 #subsection2 h4{
@@ -208,6 +242,7 @@ color: #f7b500;
 }
 #subsection3{
 background-color: black;
+margin-top: 5px;
 }
 #subsection3 h2{
     margin-top: 50px;
@@ -253,7 +288,11 @@ background-color: black;
     border-radius: 15px;
     text-align: left;
 }
-
+.reviewcard img{
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+}
 .reviewcard i{
     color: #f7b500;
     font-size: 35px;
@@ -269,4 +308,86 @@ background-color: black;
 }
 .reviewcard h5{
     color: #999;
+}
+footer{
+    color: white;
+    margin-top: 20px;
+    
+    
+}
+footer img{
+    width: 100px;
+}
+#html{
+    scroll-behavior: smooth;
+}
+.footersection{
+    display: flex;
+   gap: 60px;
+
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: red;
+}
+.footercontent textarea{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 25px;
+    width: 180px;
+    height: 35px;
+    text-align: center;
+}
+#send{
+    margin-left: 195px;
+    margin-top: -35px;
+}
+.footercontent h3{
+    color: #f7b500;
+}
+#footercontent1{
+    /* margin-top: -90px; */
+    
+}
+.socials{
+    font-size: 25px;
+}
+#footer hr{
+    width: 500px;
+    margin-left: 520px;
+    
+}
+#copyright{
+    text-align: center;
+    margin-top: 50px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 15px;
+}
+#menu p{
+    color: #f7b500;
+    font-weight: bold;
+    font-family: "Geist Pixel", sans-serif;
+}
+#subsection p{
+    font-family: "Roboto Slab", serif;
 }
