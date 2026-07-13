@@ -323,9 +323,9 @@ footer img{
 }
 .footersection{
     display: flex;
-   gap: 60px;
+    gap: 60px;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 .footercontent{
@@ -356,8 +356,12 @@ footer a:hover{
 .footercontent h3{
     color: #f7b500;
 }
-#footercontent1{
+.footercontent1 {
     /* margin-top: -90px; */
+   position: relative;
+   left: 50px;
+   top: -95px;
+   
     
 }
 .socials{
@@ -390,4 +394,9 @@ footer a:hover{
 }
 #subsection p{
     font-family: "Roboto Slab", serif;
+}
+#small{
+    position: relative;
+    margin-left: -100px;
+    top: 75px;
 }
